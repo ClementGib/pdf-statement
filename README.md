@@ -1,4 +1,4 @@
-# PDF to Table Converter
+# PDF statements to Table Converter
 
 This tool allow me to extract incoming/outgoing transaction table of a bank statements
 
@@ -14,10 +14,40 @@ This tool allow me to extract incoming/outgoing transaction table of a bank stat
 ## Setup
 1. Clone this repository.
 2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
 
-   ```bash
-brew install tesseract   
+
+Tesseract:
+```bash
+sudo apt install tesseract-ocr  # Linux
+brew install tesseract          # macOS
+```
+
+Create a Virtual Environment:
+
+```bash
+python3 -m venv venv
+```
+
+Activate the Virtual Environment:
+```bash
+source venv/bin/activate
+```
+You should now see (venv) in your terminal prompt.
+
+
+Install Packages in the Virtual Environment:
+
+```bash
+pip install -r requirements.txt
+```
+
+
+```bash
+python src/main.py
+```
+
+Exit:
+
+```bash
+deactivate
 ```

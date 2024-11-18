@@ -1,5 +1,8 @@
-pdf2image
+pillow
+PyPDF2<3.0.0
+pdf2image==1.17.0
 pytesseract
 camelot-py[cv]
+pytesseract
 opencv-python
-pillow
+pandas
